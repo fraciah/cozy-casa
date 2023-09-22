@@ -1,5 +1,3 @@
-import { useState } from "react"
-import { Card } from "./Card"
 import { BiSearch } from "react-icons/bi"
 import { FaAirbnb } from "react-icons/fa"
 import { HiMenu } from "react-icons/hi"
@@ -7,8 +5,7 @@ import { IoMdContact } from "react-icons/io"
 import { TbWorld } from "react-icons/tb"
 
 export function Nav() {
-  const [term, setTerm] = useState("")
-
+  
   return (
     <>
     <div className="border-b py-4 px-10 flex justify-between items-center">
@@ -37,8 +34,6 @@ export function Nav() {
       </div>
 
     </div>
-      <Card term={term}
-            setTerm={setTerm}/>
     </>
   )
 }
