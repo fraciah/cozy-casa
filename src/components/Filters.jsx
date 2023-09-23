@@ -19,7 +19,7 @@ export function Filters(){
 
     return(
         <>
-        <div className="pt-7 pb-2 px-10 flex items-center">
+        <div className="px-10 flex items-center pt-6 pb-4">
             
             <div className="flex gap-5 py-1 mr-5 text-gray-500">
                 <div className="flex flex-col items-center w-20 hover:text-gray-950 cursor-pointer">

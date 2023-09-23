@@ -14,7 +14,7 @@ export function Card({ term }){
           })
       }, [term])
     return(
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-10 pt-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-10 pt-3">
             {data.map((item) => {
                 return(
                     <div key={item.id} className="rounded-lg cursor-pointer">
