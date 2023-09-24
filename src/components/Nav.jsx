@@ -10,7 +10,7 @@ export function Nav() {
     <>
     <div className="border-b py-4 px-10 flex justify-between items-center">
 
-      <div className="flex items-center font-bold text-2xl cursor-pointer">
+      <div className="hidden sm:flex items-center font-bold text-2xl cursor-pointer">
         <FaAirbnb className="text-rose-500 text-4xl"/>
         <h1 className="text-rose-500 ml-1">airbnb</h1>
       </div>

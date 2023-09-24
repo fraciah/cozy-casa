@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { Card } from "./Card"
 import { LiaFilterSolid } from "react-icons/lia"
 import { HiOutlineHomeModern } from "react-icons/hi2"
 import { BsFire } from "react-icons/bs"
@@ -12,7 +11,7 @@ import { LiaSwimmingPoolSolid } from "react-icons/lia"
 import { GiIceland } from "react-icons/gi"
 
 export function Filters(){
-    const [term, setTerm] = useState("");
+    
     const [switchOn, setSwitchOn] = useState(false);
 
     const toggleSwitch = () => setSwitchOn(!switchOn);
@@ -73,8 +72,6 @@ export function Filters(){
             </div>
 
         </div>
-        <Card term={term}
-            setTerm={setTerm}/>
         </>
     )
 }
