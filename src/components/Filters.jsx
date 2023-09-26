@@ -18,53 +18,53 @@ export function Filters(){
 
     return(
         <>
-        <div className="px-10 flex items-center pt-6 pb-4">
+        <div className="px-10 flex items-center pt-6 pb-4 flex-wrap">
             
-            <div className="flex gap-5 py-1 mr-5 text-gray-500">
-                <div className="flex flex-col items-center w-20 hover:text-gray-950 cursor-pointer">
+            <div className="flex gap-6 sm:gap-5 py-1 mr-5 text-gray-500">
+                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-950 cursor-pointer">
                     <HiOutlineHomeModern className="text-3xl"/>
                     <h1 className="text-xs">Tiny homes</h1>
                 </div>
-                <div className="flex flex-col items-center w-20 hover:text-gray-950 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-950 cursor-pointer">
                     <BsFire className="text-3xl"/>
                     <h1 className="text-xs">Trending</h1>
                 </div>
-                <div className="flex flex-col items-center w-20 hover:text-gray-950 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-950 cursor-pointer">
                     <MdDesk className="text-3xl"/>
                     <h1 className="text-xs">Rooms</h1>
                 </div>
-                <div className="flex flex-col items-center w-20 hover:text-gray-950 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-950 cursor-pointer">
                     <TbHomeStar className="text-3xl"/>
                     <h1 className="text-xs">Design</h1>
                 </div>
-                <div className="flex flex-col items-center w-20 hover:text-gray-950 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-950 cursor-pointer">
                     <TbBeach className="text-3xl"/>
                     <h1 className="text-xs">Beachfront</h1>
                 </div>
-                <div className="flex flex-col items-center w-20 hover:text-gray-950 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-950 cursor-pointer">
                     <BiLandscape className="text-3xl"/>
                     <h1 className="text-xs">Amazing views</h1>
                 </div>
-                <div className="flex flex-col items-center w-20 hover:text-gray-950 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-950 cursor-pointer">
                     <MdOutlineFreeBreakfast className="text-3xl"/>
                     <h1 className="text-xs text-center">Bed & breakfasts</h1>
                 </div>
-                <div className="flex flex-col items-center w-20 hover:text-gray-950 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-950 cursor-pointer">
                     <GiIceland className="text-3xl"/>
                     <h1 className="text-xs">Countryside</h1>
                 </div>
-                <div className="flex flex-col items-center w-20 hover:text-gray-950 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-950 cursor-pointer">
                     <LiaSwimmingPoolSolid className="text-3xl"/>
                     <h1 className="text-xs">Amazing pools</h1>
                 </div>
             </div>
 
-            <div className="flex border py-4 px-5 rounded-xl items-center cursor-pointer mx-5">
+            <div className="flex border py-4 px-5 rounded-xl items-center cursor-pointer mx-5 mt-5 md:mt-0">
                 <LiaFilterSolid className="mr-1"/>
                 <h1 className="text-xs font-semibold">Filters</h1>
             </div>
 
-            <div className="flex border py-3 px-4 rounded-xl items-center cursor-pointer">
+            <div className="flex border py-3 px-4 rounded-xl items-center cursor-pointer mt-5 md:mt-0">
                 <h1 className="text-xs font-semibold mr-3">Display total before taxes</h1>
                 <div onClick={toggleSwitch} className={`${switchOn ? "bg-gray-800" : "bg-gray-300"} inline-block w-10 h-6 rounded-full p-1 transition-colors duration-300 ease-in-out`}>
                     <span className={`${switchOn ? "translate-x-full" : ""} block w-4 h-4 bg-white rounded-full shadow transform transition-transform duration-300 ease-in-out`}></span>

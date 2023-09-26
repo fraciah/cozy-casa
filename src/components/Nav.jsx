@@ -15,8 +15,8 @@ export function Nav() {
         <h1 className="text-rose-500 ml-1">airbnb</h1>
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center mt-4 sm:mt-0">
-        <div className="flex border rounded-3xl py-2 pl-2 pr-1 sm:pl-6 sm:pr-1 ml-0 sm:ml-4 cursor-pointer items-center shadow hover:shadow-md">
+      <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center mt-4 sm:mt-0 ml-20">
+        <div className="flex border rounded-3xl py-2 pl-4 pr-1 sm:pl-6 sm:pr-1 ml-0 sm:ml-4 cursor-pointer items-center shadow hover:shadow-md">
           <h3 className="font-semibold text-gray-700">Anywhere<span className="border-r border-slate-400 mx-2 sm:mx-4"></span></h3>
           <h3 className="font-semibold text-gray-600">Any week<span className="border-r border-slate-400 mx-2 sm:mx-4"></span></h3>
           <h3 className="mr-2 sm:mr-4 text-gray-400">Add guests</h3>
@@ -24,8 +24,8 @@ export function Nav() {
         </div>
       </div>
 
-      <div className="flex items-center mt-4 sm:mt-0">
-        <h3 className="p-2 rounded-3xl font-semibold text-gray-600 mr-3 hover:bg-gray-50">Airbnb your home</h3>
+      <div className="flex items-center mt-4 sm:mt-0 cursor-pointer">
+        <h3 className="p-3 rounded-3xl font-semibold text-gray-600 mr-3 hover:bg-gray-50">Airbnb your home</h3>
         <div className="p-2 rounded-3xl mr-3 hover:bg-gray-100">
             <TbWorld className="text-xl"/>
         </div>
