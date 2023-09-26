@@ -18,7 +18,7 @@ export function Card({ term }){
             {data.map((item) => {
                 return(
                     <div key={item.id} className="rounded-lg cursor-pointer">
-                        <img src={item.webformatURL} alt={item.tags} className="w-full h-64 object-cover mb-2 rounded-xl" />
+                        <img src={item.webformatURL} alt={item.tags} className="w-full h-72 object-cover mb-2 rounded-xl" />
                         <h2 className="text-base mb-2 font-semibold text-gray-900">Courtesy of {item.user}</h2>
                         <div className="grid grid-cols-2 mb-5 gap-2">
                             <h6><span className="font-medium">Likes:</span> {item.likes}</h6>
