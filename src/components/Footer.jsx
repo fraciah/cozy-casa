@@ -5,8 +5,8 @@ import { FaSquareXTwitter } from "react-icons/fa6"
 
 export function Footer(){
     return(
-        <div className="container mx-auto px-1">
-            <div className="flex justify-between border-t py-5 mt-1">
+        <div className="px-10 bg-gray-100">
+            <div className="flex justify-between border-t py-5">
 
                 <div className="flex gap-2 text-base text-gray-700">
                     <h6>&copy; 2023 Airbnb, Inc.</h6>
