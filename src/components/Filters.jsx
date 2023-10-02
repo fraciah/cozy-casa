@@ -19,42 +19,42 @@ export function Filters(){
 
     return(
         <>
-        <div className="px-10 flex items-center pt-6 pb-4 flex-wrap">
+        <div className="px-10 flex items-center pt-6 flex-wrap">
             
             <div className="flex gap-6 sm:gap-4 py-1 mr-1 text-gray-500">
-                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-800 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 pb-3 border-b-2 border-gray-800 text-gray-800">
                     <HiOutlineHomeModern className="text-3xl"/>
                     <h1 className="text-xs">Tiny homes</h1>
                 </div>
-                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-800 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 pb-3 hover:text-gray-800 hover:border-b-2 cursor-pointer">
                     <BsFire className="text-3xl"/>
                     <h1 className="text-xs">Trending</h1>
                 </div>
-                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-800 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 pb-3 hover:text-gray-800 hover:border-b-2 cursor-pointer">
                     <MdDesk className="text-3xl"/>
                     <h1 className="text-xs">Rooms</h1>
                 </div>
-                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-800 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 pb-3 hover:text-gray-800 hover:border-b-2 cursor-pointer">
                     <TbHomeStar className="text-3xl"/>
                     <h1 className="text-xs">Design</h1>
                 </div>
-                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-800 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 pb-3 hover:text-gray-800 hover:border-b-2 cursor-pointer">
                     <TbBeach className="text-3xl"/>
                     <h1 className="text-xs">Beachfront</h1>
                 </div>
-                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-800 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 pb-3 hover:text-gray-800 hover:border-b-2 cursor-pointer">
                     <BiLandscape className="text-3xl"/>
                     <h1 className="text-xs">Amazing views</h1>
                 </div>
-                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-800 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 pb-3 hover:text-gray-800 hover:border-b-2 cursor-pointer">
                     <LuSailboat className="text-3xl"/>
                     <h1 className="text-xs text-center">Boats</h1>
                 </div>
-                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-800 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 pb-3 hover:text-gray-800 hover:border-b-2 cursor-pointer">
                     <LiaSwimmingPoolSolid className="text-3xl"/>
                     <h1 className="text-xs">Amazing pools</h1>
                 </div>
-                <div className="flex flex-col items-center w-10 sm:w-20 hover:text-gray-800 cursor-pointer">
+                <div className="flex flex-col items-center w-10 sm:w-20 pb-3 hover:text-gray-800 hover:border-b-2 cursor-pointer">
                     <LiaGolfBallSolid className="text-3xl"/>
                     <h1 className="text-xs">Golfing</h1>
                 </div>
