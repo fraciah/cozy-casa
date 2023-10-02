@@ -11,8 +11,10 @@ function App() {
   
   return (
     <>
-      <Nav />
-      <Filters />
+      <div className="sticky top-0 w-full bg-white">
+        <Nav />
+        <Filters />
+      </div>
       <Card term={term}
             setTerm={setTerm}/>
       <Insp/>
