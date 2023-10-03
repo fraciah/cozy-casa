@@ -14,6 +14,7 @@ export function Card({ term }){
           })
       }, [term])
     return(
+        <>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-10 mt-3">
             {data.map((item) => {
                 return(
@@ -34,6 +35,11 @@ export function Card({ term }){
             })
             }
         </div>
+        <div className="mt-8 flex flex-col items-center justify-center">
+            <p className="font-semibold text-lg mb-3">Continue exploring iconic city homes</p>
+            <button className="bg-zinc-800 hover:bg-zinc-900 font-semibold text-white py-3 px-5 rounded-md">Show more</button>
+        </div>
+        </>
     )
 }
 Card.propTypes = {
