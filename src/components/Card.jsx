@@ -25,17 +25,14 @@ export function Card({ term }){
                             <h6><span className="font-medium">Likes:</span> {item.likes}</h6>
                             <h5><span className="font-medium">Views:</span> {item.views}</h5>
                             <h4><span className="font-medium">Comments: </span>{item.comments}</h4>
-                            <h3><span className="font-medium">Downloads:</span>{item.downloads}</h3>
+                            <h3><span className="font-medium">Downloads: </span>{item.downloads}</h3>
                         </div>
-                        <p>{item.tags.split(', ').map((tag, index) => (
-                                <span key={index} className="rounded p-1 mr-2 bg-slate-200">#{tag} </span>
-                            ))}</p>
                     </div>
                 )
             })
             }
         </div>
-        <div className="mt-8 flex flex-col items-center justify-center">
+        <div className="mt-10 flex flex-col items-center justify-center">
             <p className="font-semibold text-lg mb-3">Continue exploring iconic city homes</p>
             <button className="bg-zinc-800 hover:bg-zinc-900 font-semibold text-white py-3 px-5 rounded-md">Show more</button>
         </div>
