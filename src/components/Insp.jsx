@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 export function Insp(){
     const categories = ["Popular", "Arts & culture", "Outdoors", "Mountains", "Beach", "Unique stays", "Categories", "Things to do", "Airbnb-friendly apartments"];
@@ -12,23 +12,15 @@ export function Insp(){
     const hosting = ["Hosting","Airbnb your home","AirCover for Hosts","Hosting resources","Community forum","Hosting responsibly","Airbnb-friendly apartments"];
     const airbnb = ["Airbnb","Newsroom","New features","Careers","Investors","Gift cards","Airbnb.org emergency stays"];
 
-    const scrollContainer = useRef(null);
-    const [isAtStart, setIsAtStart] = useState(true);
-    const [isAtEnd, setIsAtEnd] = useState(false);
+    const slideLeft = () => {
+        var slider = document.getElementById("slider");
+        slider.scrollLeft -= 200;
+    }
 
-    const checkScrollPosition = () => {
-        setIsAtStart(scrollContainer.current.scrollLeft === 0);
-        setIsAtEnd(scrollContainer.current.scrollLeft + scrollContainer.current.offsetWidth >= scrollContainer.current.scrollWidth);
-    };
-
-    useEffect(() => {
-        checkScrollPosition();
-    }, []);
-
-    const scroll = (scrollOffset) => {
-        scrollContainer.current.scrollLeft += scrollOffset;
-        checkScrollPosition();
-    };
+    const slideRight = () => {
+        var slider = document.getElementById("slider");
+        slider.scrollLeft += 200;
+    }
 
     return(
         <>
@@ -37,8 +29,8 @@ export function Insp(){
                 <h1 className="font-semibold text-xl sm:text-2xl mb-3 text-gray-900">Inspiration for future getaways</h1>
 
                 <div className="flex items-center">
-                {!isAtStart && <button onClick={() => scroll(-100)} className="md:hidden font-bold text-lg mb-2 pr-1">{'<'}</button>}
-                    <div ref={scrollContainer} onScroll={checkScrollPosition} className="flex gap-6 sm:gap-5 border-b overflow-hidden">
+                    <MdChevronLeft onClick={slideLeft} className="cursor-pointer lg:hidden" size={40}/>
+                    <div id="slider" className="flex gap-6 sm:gap-5 border-b overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide">
                         {categories.map((category, index) => (
                             <div key={index} className={`pb-1 ${category === activeCategory ? 'border-gray-900 border-b-2' : 'border-transparent'}`}>
                                 <h4 
@@ -49,7 +41,7 @@ export function Insp(){
                             </div>
                         ))}
                     </div>
-                    {!isAtEnd && <button onClick={() => scroll(100)} className="md:hidden font-bold text-lg mb-2 pl-1">{'>'}</button>}
+                    <MdChevronRight onClick={slideRight} className="cursor-pointer lg:hidden" size={40}/>
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 pt-8 pb-14">
@@ -65,23 +57,23 @@ export function Insp(){
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 bg-gray-100">
-            <div className="py-10 border-b md:border-b-0">
+            <div className="py-6 sm:py-10 border-b md:border-b-0">
                 {support.map((item, index) => (
-                    <div key={index} className="px-10">
+                    <div key={index} className="px-6 sm:px-10">
                         <h5 className={`py-1 cursor-pointer ${index === 0? 'text-gray-900 font-semibold' : 'text-gray-700 hover:underline'}`}>{item}</h5>
                     </div>
                 ))}
             </div>
-            <div className="py-10 border-b md:border-b-0">
+            <div className="py-6 sm:py-10 border-b md:border-b-0">
                 {hosting.map((item, index) => (
-                    <div key={index} className="px-10">
+                    <div key={index} className="px-6 sm:px-10">
                         <h5 className={`py-1 cursor-pointer ${index === 0? 'text-gray-900 font-semibold' : 'text-gray-700 hover:underline'}`}>{item}</h5>
                     </div>
                 ))}
             </div>
-            <div className="py-10">
+            <div className="py-6 sm:py-10">
                 {airbnb.map((item, index) => (
-                    <div key={index} className="px-10">
+                    <div key={index} className="px-6 sm:px-10">
                         <h5 className={`py-1 cursor-pointer ${index === 0? 'text-gray-900 font-semibold' : 'text-gray-700 hover:underline'}`}>{item}</h5>
                     </div>
                 ))}
