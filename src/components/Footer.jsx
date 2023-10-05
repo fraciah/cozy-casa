@@ -9,7 +9,7 @@ export function Footer(){
             <div className="flex justify-between border-t py-5">
 
                 <div className="flex gap-2 text-base text-gray-700">
-                    <h6>&copy; 2023 Airbnb, Inc.</h6>
+                    <a href="https://github.com/fraciah?tab=repositories" className="text-gray-900 font-semibold" target="blank">Crafted with 💖 by Fraciah</a>
                     <span>·</span>
                     <h5 className="hover:underline cursor-pointer">Terms </h5>
                     <span>·</span>
