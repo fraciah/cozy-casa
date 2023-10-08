@@ -8,14 +8,14 @@ export function Nav() {
   
   return (
     <>
-    <div className="border-b py-1 sm:py-4 px-5 sm:px-10 flex flex-wrap justify-between items-center">
+    <div className="border-b py-1 sm:py-3 px-5 sm:px-10 flex flex-wrap justify-between items-center">
 
       <div className="flex items-center font-bold text-lg sm:text-2xl cursor-pointer">
         <FaAirbnb className="text-rose-500 text-3xl sm:text-4xl"/>
         <h1 className="text-rose-500 ml-1">airbnb</h1>
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center mt-1 sm:mt-0 sm:ml-20">
+      <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center mt-1 sm:mt-0 sm:ml-20 mb-2">
         <div className="flex border rounded-3xl py-2 pl-3 pr-2 sm:pl-6 sm:pr-1 ml-0 sm:ml-4 cursor-pointer items-center shadow hover:shadow-md">
           <h3 className="font-semibold text-gray-700 text-xs sm:text-base">Anywhere<span className="border-r border-slate-400 mx-1 sm:mx-4"></span></h3>
           <h3 className="font-semibold text-gray-600 text-xs sm:text-base">Any week<span className="border-r border-slate-400 mx-1 sm:mx-4"></span></h3>
