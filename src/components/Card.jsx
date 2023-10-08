@@ -1,4 +1,6 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
+import { AiFillStar } from "react-icons/ai";
+
 export function Card(){
     const [data, setData] = useState([]);
     const term = "bungalow";  //property
@@ -22,12 +24,20 @@ export function Card(){
                 return(
                     <div key={item.id} className="rounded-lg cursor-pointer">
                         <img src={item.webformatURL} alt={item.tags} className="w-full h-64 sm:h-72 object-cover mb-2 rounded-xl" />
-                        <h2 className="text-base mb-2 font-semibold text-gray-900">Courtesy of {item.user}</h2>
-                        <div className="grid grid-cols-2 mb-5 gap-2">
-                            <h6><span className="font-medium">Likes:</span> {item.likes}</h6>
-                            <h5><span className="font-medium">Views:</span> {item.views}</h5>
-                            <h4><span className="font-medium">Comments: </span>{item.comments}</h4>
-                            <h3><span className="font-medium">Downloads: </span>{item.downloads}</h3>
+                        <div className="flex justify-between">
+                            <h2 className="text-base mb-1 font-semibold text-gray-900">Courtesy of {item.user}</h2>
+                            <h6 className="flex items-center"><AiFillStar className="mr-1"/>{item.likes}</h6>
+                        </div>
+                        <div className="mb-5">
+                            <h5 className="text-gray-500 text-sm sm:text-base">{item.views} views</h5>
+                            <h4 className="text-gray-500 text-sm sm:text-base">{item.comments} comments</h4>
+                            <h3 className="text-gray-900 flex flex-wrap mt-1">
+                                {item.tags.split(', ').map((tag, index) => (
+                                    <span key={index} className="bg-rose-100 mr-1 mb-1 text-xs sm:text-sm rounded-md p-1">
+                                    #{tag}
+                                    </span>
+                                ))}
+                            </h3>
                         </div>
                     </div>
                 )
