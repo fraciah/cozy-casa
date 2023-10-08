@@ -15,11 +15,11 @@ export function Card({ term }){
       }, [term])
     return(
         <>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-10 mt-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5 sm:px-10 mt-3">
             {data.map((item) => {
                 return(
                     <div key={item.id} className="rounded-lg cursor-pointer">
-                        <img src={item.webformatURL} alt={item.tags} className="w-full h-72 object-cover mb-2 rounded-xl" />
+                        <img src={item.webformatURL} alt={item.tags} className="w-full h-64 sm:h-72 object-cover mb-2 rounded-xl" />
                         <h2 className="text-base mb-2 font-semibold text-gray-900">Courtesy of {item.user}</h2>
                         <div className="grid grid-cols-2 mb-5 gap-2">
                             <h6><span className="font-medium">Likes:</span> {item.likes}</h6>
@@ -32,9 +32,9 @@ export function Card({ term }){
             })
             }
         </div>
-        <div className="mt-10 flex flex-col items-center justify-center">
-            <p className="font-semibold text-lg mb-3">Continue exploring iconic city homes</p>
-            <button className="bg-zinc-800 hover:bg-zinc-900 font-semibold text-white py-3 px-5 rounded-md">Show more</button>
+        <div className="mt-8 sm:mt-10 flex flex-col items-center">
+            <p className="font-semibold text-base sm:text-lg mb-3 text-center">Continue exploring iconic city homes</p>
+            <button className="bg-zinc-800 hover:bg-zinc-900 text-base sm:text-lg font-semibold text-white py-2 sm:py-3 px-3 sm:px-5 rounded-md">Show more</button>
         </div>
         </>
     )
