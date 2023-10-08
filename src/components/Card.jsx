@@ -1,8 +1,7 @@
-import PropTypes from 'prop-types';
-
 import { useState, useEffect } from "react"
-export function Card({ term }){
-    const [data, setData] = useState([])
+export function Card(){
+    const [data, setData] = useState([]);
+    const term = "bungalow";  //property
 
     useEffect(() =>{
         const apiKey = import.meta.env.VITE_API_KEY;
@@ -12,7 +11,10 @@ export function Card({ term }){
             console.log("Data",data.hits)
             setData(data.hits)
           })
-      }, [term])
+            .catch((error) => {
+                console.log(error);
+            });
+      }, [])
     return(
         <>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5 sm:px-10 mt-3">
@@ -39,6 +41,3 @@ export function Card({ term }){
         </>
     )
 }
-Card.propTypes = {
-    term: PropTypes.string.isRequired,
-};

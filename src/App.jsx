@@ -7,7 +7,6 @@ import { Insp } from './components/Insp'
 import { Footer } from './components/Footer'
 
 function App() {
-  const [term, setTerm] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -29,8 +28,7 @@ function App() {
         <Nav />
         <Filters />
       </div>
-      <Card term={term}
-            setTerm={setTerm}/>
+      <Card/>
       <Insp/>
       <Footer />
     </>
