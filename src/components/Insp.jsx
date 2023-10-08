@@ -1,4 +1,4 @@
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+// import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 export function Insp(){
     const categories = ["Popular", "Arts & culture", "Outdoors", "Mountains", "Beach", "Unique stays", "Categories", "Things to do", "Airbnb-friendly apartments"];
@@ -12,15 +12,15 @@ export function Insp(){
     const hosting = ["Hosting","Airbnb your home","AirCover for Hosts","Hosting resources","Community forum","Hosting responsibly","Airbnb-friendly apartments"];
     const airbnb = ["Airbnb","Newsroom","New features","Careers","Investors","Gift cards","Airbnb.org emergency stays"];
 
-    const slideLeft = () => {
-        var slider = document.getElementById("slider");
-        slider.scrollLeft -= 200;
-    }
+    // const slideLeft = () => {
+    //     var slider = document.getElementById("slider");
+    //     slider.scrollLeft -= 200;
+    // }
 
-    const slideRight = () => {
-        var slider = document.getElementById("slider");
-        slider.scrollLeft += 200;
-    }
+    // const slideRight = () => {
+    //     var slider = document.getElementById("slider");
+    //     slider.scrollLeft += 200;
+    // }
 
     return(
         <>
@@ -29,7 +29,7 @@ export function Insp(){
                 <h1 className="font-semibold text-xl sm:text-2xl mb-3 text-gray-900">Inspiration for future getaways</h1>
 
                 <div className="flex items-center">
-                    <MdChevronLeft onClick={slideLeft} className="cursor-pointer lg:hidden" size={40}/>
+                    {/* <MdChevronLeft onClick={slideLeft} className="cursor-pointer lg:hidden" size={40}/> */}
                     <div id="slider" className="flex gap-6 sm:gap-5 border-b overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide">
                         {categories.map((category, index) => (
                             <div key={index} className={`pb-1 ${category === activeCategory ? 'border-gray-900 border-b-2' : 'border-transparent'}`}>
@@ -41,7 +41,7 @@ export function Insp(){
                             </div>
                         ))}
                     </div>
-                    <MdChevronRight onClick={slideRight} className="cursor-pointer lg:hidden" size={40}/>
+                    {/* <MdChevronRight onClick={slideRight} className="cursor-pointer lg:hidden" size={40}/> */}
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 pt-8 pb-14">
