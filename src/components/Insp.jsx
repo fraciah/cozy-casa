@@ -30,7 +30,7 @@ export function Insp(){
 
                 <div className="flex items-center">
                     {/* <MdChevronLeft onClick={slideLeft} className="cursor-pointer lg:hidden" size={40}/> */}
-                    <div id="slider" className="flex gap-6 sm:gap-5 border-b overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide">
+                    <div id="slider" className="flex gap-6 sm:gap-5 border-b w-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide">
                         {categories.map((category, index) => (
                             <div key={index} className={`pb-1 ${category === activeCategory ? 'border-gray-900 border-b-2' : 'border-transparent'}`}>
                                 <h4 
