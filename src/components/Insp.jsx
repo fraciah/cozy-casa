@@ -34,7 +34,7 @@ export function Insp(){
                         {categories.map((category, index) => (
                             <div key={index} className={`pb-1 ${category === activeCategory ? 'border-gray-900 border-b-2' : 'border-transparent'}`}>
                                 <h4 
-                                    className={`font-semibold sm:text-base text-sm cursor-pointer py-2 ${category === activeCategory ? 'text-gray-900' : 'text-gray-500'}`}
+                                    className={`font-semibold sm:text-base text-sm cursor-pointer hover:text-gray-900 py-2 ${category === activeCategory ? 'text-gray-900' : 'text-gray-500'}`}
                                 >
                                     {category}
                                 </h4>
